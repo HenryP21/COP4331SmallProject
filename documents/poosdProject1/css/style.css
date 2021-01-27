@@ -1,0 +1,290 @@
+body 
+{
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#title 
+{
+    font-size: 40px;
+    width: 100%;
+    margin: 2% 5%;
+    text-align: center;
+    font-family: 'Faster One';
+    color: #F5F5F5;
+}
+
+#secondTitle
+{
+    font-size: 30px;
+    width: 100%;
+    margin: 3% 5%;
+    text-align: center;
+    font-family: 'Faster One';
+    color: #F5F5F5;
+}
+
+#login-msg
+{
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #F5F5F5;  
+}
+
+#login-here
+{
+    width: 300px;
+    border: 15px solid purple;
+    padding: 50px;
+    margin: 20px;
+}
+
+#register-msg
+{
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #F5F5F5;
+}
+
+/* #register-prompt
+{
+    display: inline-block;
+    font-size: 0.8em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: slategray;
+} */
+
+#register-here
+{
+    width: 300px;
+    border: 15px solid purple;
+    padding: 50px;
+    margin: 20px;
+}
+
+/* #loginDiv
+{
+    font-size: 30px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 25px;
+    background-color: #F5F5F5;
+} */
+
+/* #loggedInDiv
+{
+    font-size: 30px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 25px;
+    background-color: #F5F5F5;
+} */
+
+/* #accessUIDiv
+{
+    font-size: 30px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 25px;
+    background-color: #F5F5F5;
+} */
+
+/* #register-form
+{
+    font-size: 30px;
+    width: 70%;
+    margin-left: 15%;
+    padding: 25px;
+    background-color: #F5F5F5;
+} */
+
+/* .buttons
+{
+    font-size: 30px;
+    border-radius: 25px;
+    width: 50%;
+    margin-left: 25%;
+    font-family: 'Ubuntu', sans-serif;
+}  */
+
+button {
+    border: none;
+    padding: 1em;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-style: 1.2em;
+    letter-spacing: 0.2em;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    background: none;
+    text-shadow: 3px 3px 10px rgba(0,0,0,.45);
+    &:before, &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 10em;
+      transform: translateX(-50%) translateY(-50%);
+      width: 105%;
+      height: 105%;
+      content: '';
+      z-index: -2;
+      background-size: 400% 400%;
+      background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    }
+    &:before {
+      filter: blur(7px);
+      transition: all .25s ease;
+      animation: pulse 10s infinite ease;
+    }
+    &:after {
+      filter: blur(0.3px);
+    }
+    &:hover {
+      &:before {
+        width: 115%;
+        height: 115%;
+      }
+    }
+  }
+
+#loginName
+{
+	font-size: 30px;
+}
+#loginPassword
+{
+	font-size: 30px;
+}
+
+#registerName
+{
+	font-size: 30px;
+}
+#registerPassword
+{
+	font-size: 30px;
+}
+
+#registerFirst
+{
+    font-size: 30px;
+}
+
+#registerLast
+{
+    font-size: 30px;
+}
+
+#searchText
+{
+	font-size: 30px;
+}
+
+#userText
+{
+	font-size: 30px;
+}
+
+#phone
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+#email
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+#zip
+{
+    font-size: 20px;
+    text-align: center;
+}
+
+
+input[type="text"],input[type="password"]{
+    border-radius: 25px;
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 2%;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#inner-title{
+    display: inline-block;
+    font-size:xx-large;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: #F5F5F5;
+}
+
+#loginResult{
+    display: inline-block;
+    font-size: 0.8em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #95060a;
+}
+
+#userName{
+    display: inline-block;
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+#logoutButton{
+    width: 20%;
+    margin-left: 40%;
+}
+
+select{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 2%;
+    font-size: 0.75em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#userSearchResult{
+    display: none;
+}
+
+#userAddResult{
+    display: inline-block;
+    font-size: 0.8em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-family: 'Ubuntu', sans-serif;
+    color: #95060a;
+}
